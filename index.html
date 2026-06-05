@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Timestamp Converter - 免费在线工具</title>
-<meta name="description" content="在线时间戳转换器 - Unix时间戳与日期互转，支持秒/毫秒级">
+<title>Timestamp Converter - 免费Online Tools</title>
+<meta name="description" content="在线时间戳Convert器 - Unix时间戳与日期互转，支持秒/毫秒级">
 <style>*{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d1117;color:#c9d1d9;min-height:100vh;display:flex;flex-direction:column}
 header{background:#161b22;border-bottom:1px solid #30363d;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
@@ -23,11 +23,11 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:#58a6ff!import
 <body>
 <header>
   <div class="logo">🛠 <span>Dev</span>Kit<span class="badge">BETA</span></div>
-  <div style="font-size:11px;color:#8b949e">🔒 本地处理 · 数据不上传</div>
+  <div style="font-size:11px;color:#8b949e">🔒 Processed locally · 数据不Upload</div>
 </header>
 <main>
   <h1 style="font-size:24px;margin-bottom:4px">Timestamp Converter</h1>
-  <p style="color:#8b949e;font-size:14px;margin-bottom:8px">在线时间戳转换器 - Unix时间戳与日期互转，支持秒/毫秒级</p>
+  <p style="color:#8b949e;font-size:14px;margin-bottom:8px">在线时间戳Convert器 - Unix时间戳与日期互转，支持秒/毫秒级</p>
 <div class="tool-wrapper">
   <div class="panel" style="margin-bottom:16px"><div style="font-size:12px;color:#8b949e;margin-bottom:6px">当前时间戳</div>
   <div style="display:flex;gap:12px;flex-wrap:wrap">
@@ -37,14 +37,14 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:#58a6ff!import
   </div></div>
   <div class="panel"><div style="font-size:12px;color:#8b949e;margin-bottom:6px">时间戳 → 日期</div>
   <div style="display:flex;gap:8px;margin-bottom:8px">
-    <input type="text" id="ts-input" placeholder="输入时间戳..." style="flex:1;padding:10px;border:1px solid #30363d;border-radius:6px;background:#0d1117;color:#c9d1d9;font-size:14px;outline:none;font-family:mono">
-    <button class="btn btn-primary" style="padding:10px 20px;background:#238636;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600" onclick="tsToDate()">转换</button>
+    <input type="text" id="ts-input" placeholder="Input时间戳..." style="flex:1;padding:10px;border:1px solid #30363d;border-radius:6px;background:#0d1117;color:#c9d1d9;font-size:14px;outline:none;font-family:mono">
+    <button class="btn btn-primary" style="padding:10px 20px;background:#238636;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600" onclick="tsToDate()">Convert</button>
   </div>
-  <div id="ts-result" style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px;font-family:mono;font-size:13px;min-height:40px;color:#c9d1d9">输入时间戳查看对应日期</div></div>
+  <div id="ts-result" style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px;font-family:mono;font-size:13px;min-height:40px;color:#c9d1d9">Input时间戳查看对应日期</div></div>
   <div class="panel" style="margin-top:16px"><div style="font-size:12px;color:#8b949e;margin-bottom:6px">日期 → 时间戳</div>
   <div style="display:flex;gap:8px;margin-bottom:8px">
     <input type="datetime-local" id="dt-input" style="flex:1;padding:10px;border:1px solid #30363d;border-radius:6px;background:#0d1117;color:#c9d1d9;font-size:14px;outline:none">
-    <button class="btn btn-primary" style="padding:10px 20px;background:#238636;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600" onclick="dateToTs()">转换</button>
+    <button class="btn btn-primary" style="padding:10px 20px;background:#238636;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600" onclick="dateToTs()">Convert</button>
   </div>
   <div id="dt-result" style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px;font-family:mono;font-size:13px;min-height:40px;color:#c9d1d9">选择日期查看对应时间戳</div></div>
 </div>
